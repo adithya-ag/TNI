@@ -1,0 +1,43 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: OneAdi@123  # Set the root password here
+      MYSQL_DATABASE: tni
+      MYSQL_ALLOW_EMPTY_PASSWORD: "no"  # To ensure a password is required
+    ports:
+      - "3307:3306"
+    networks:
+      - mynetwork
+
+  spring-app:
+    build:
+      context: C:\Users\anand\OneDrive\Documents\vs\Internship\CURRENT_FILE\intern-telecom-inventory
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mysql
+    networks:
+      - mynetwork
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/tni?useSSL=false&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: One@Adi123
+
+  flask-app:
+    build:
+      context: C:\Users\anand\OneDrive\Documents\vs\Internship\CURRENT_FILE\Final API
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      - spring-app
+    networks:
+      - mynetwork
+
+
+networks:
+  mynetwork:
+    driver: bridge
