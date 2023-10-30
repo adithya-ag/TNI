@@ -193,7 +193,7 @@ public class TNIController {
         log.info("Response body: " + responseBody);
     }
 
-//    Using WebClient
+
     @RequestMapping(value = "/TestingConnection2")
     public void testConnectionInWebClient(){
         String apiUrl = "http://localhost:5000/TestingConnection";
