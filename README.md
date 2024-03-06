@@ -91,7 +91,7 @@ Special thanks to the mentors who provided invaluable insights and guidance thro
 
 - [Dhruv G](https://www.linkedin.com/in/dhruv-gupta-5300171b): Dhruv sir has played a pivotal role in the project, sharing extensive knowledge and expertise in both front-end and backend developement. To starting the application from scratch and building the web application on java springBoot MVC as a maven project .
 
-- [Srivastsa G](https://www.linkedin.com/in/gorursrivatsa/): Srivastsa sir's mentorship and guidance were instrumental in shaping the architecture and design of the TNI project.
+- [Srivatsa G](https://www.linkedin.com/in/gorursrivatsa/): Srivastsa sir's mentorship and guidance were instrumental in shaping the architecture and design of the TNI project.
 
 - [Kamal](https://www.linkedin.com/in/kamal-nath-tiwari-61143a67/): Kamal sir's contributions to the project, particularly in the areas of AI and Machine Learning integration, were highly commendable. Also was guid for Flask API integration significantly enhanced the application's functionality.
 
